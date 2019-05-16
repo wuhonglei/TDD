@@ -9,10 +9,12 @@ describe('util tests', function() {
         util = new Util();
     });
 
+    // 金丝雀测试
     it('should pass this canary test', function() {
         expect(true).to.equal(true);
     });
 
+    // 3-As 模式
     it('should pass if f2c return 0c for 32F', function() {
         var fahrenheit = 32;
 
@@ -21,6 +23,7 @@ describe('util tests', function() {
         expect(celsius).to.equal(0);
     });
 
+    // 构建复杂的测试案例
     it('should pass if f2c return 10c for 50F', function() {
         var fahrenheit = 50;
 
