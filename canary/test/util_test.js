@@ -4,6 +4,7 @@ const Util = require('../src/util.js');
 describe('util tests', function() {
     let util;
 
+    // 在每个测试案例运行之前执行
     beforeEach(function() {
         util = new Util();
     });
