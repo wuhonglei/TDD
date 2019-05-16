@@ -2,7 +2,7 @@
 > 正确的测试重心：
 即单元测试占最大的比重，UI 测试比重最小
 
-![测试金字塔](leanote://file/getImage?fileId=5cdd65a2ab6441551700734f)
+![测试金字塔](https://ws3.sinaimg.cn/large/006tNc79gy1g33lr2u9c5j30dw0dwt8s.jpg)
 
 ### 第一部分 场景自动化测试
 **金丝雀测试**
