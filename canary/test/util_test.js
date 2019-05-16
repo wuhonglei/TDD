@@ -1,7 +1,6 @@
 const expect = require('chai').expect;
 const Util = require('../src/util.js');
 
-// 金丝雀测试，验证测试环境是否正常
 describe('util tests', function() {
     let util;
 
