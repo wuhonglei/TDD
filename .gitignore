@@ -1,0 +1,31 @@
+.DS_Store
+/node_modules
+
+# 忽略打包生成的文件
+/dist
+# 不忽略 iframe.html 文件
+# !/dist/iframe.html
+
+# local env files
+.env.local
+.env.*.local
+
+# Log files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Editor directories and filesg
+.idea
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+
+# 忽略 npm 本地文件
+/package-lock.json
+
+# 忽略 vpn 服务器地址配置文件
+/util/config/vpn.js
