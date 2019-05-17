@@ -31,29 +31,29 @@ describe('util tests', function() {
 ```javascript
 // 金丝雀测试，验证测试环境是否正常
 describe('util tests', function () {
-	before(function () {
-		console.info('所有测试前运行一次');
-	});
+    before(function () {
+        console.info('所有测试前运行一次');
+    });
 
-	beforeEach(function() {
-		console.info('每个测试运行前运行');
-	});
+    beforeEach(function() {
+        console.info('每个测试运行前运行');
+    });
 
-	afterEach(function() {
-		console.info('每个测试运行结束后运行');
-	});
+    afterEach(function() {
+        console.info('每个测试运行结束后运行');
+    });
 
-	it('should pass this canary test', function () {
-		expect(true).to.equal(true);
-	});
+    it('should pass this canary test', function () {
+        expect(true).to.equal(true);
+    });
 
-	it('should pass this canary test', function () {
-		expect(true).to.equal(true);
-	});
+    it('should pass this canary test', function () {
+        expect(true).to.equal(true);
+    });
 
-	after(function() {
-		console.info('所有测试结束后运行一次');
-	});
+    after(function() {
+        console.info('所有测试结束后运行一次');
+    });
 });
 ```
 
@@ -69,5 +69,26 @@ it('should pass if f2c return 0c for 32F', function() {
     var celsius = util.f2c(fahrenheit);
     
     expect(celsius).to.equal(0);
+});
+```
+
+**正向测试、反向测试、异常测试**
+
+- 正向测试：常规测试样例
+- 反向测试：边界情况、非法输入和可能导致程序出错的一些其他情况
+- 异常测试：
+
+
+**编写测试步骤**
+
+1. 先从正向测试入手，随手写一些简单的测试样例。保持 `测试-编码-运行` 的循环步骤，即一次添加一个测试样例
+2. 可以反向测试的特殊情况记录下来，但不必立刻去编码处理
+3. mocha 也可以测试程序是否抛出了异常，代码如下:
+```javascript
+// 异常测试
+it('should throw an exception if argument is missing', function() {
+    var call = function() { isPalindrome() }; // 使用函数包裹，避免 isPalindrome 抛出的异常中断测试的执行
+
+    expect(call).to.throw(Error, /Invalid argument/i); // 可以使用正则 或 字符串进行比较
 });
 ```
