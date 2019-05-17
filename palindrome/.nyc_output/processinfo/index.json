@@ -1,0 +1,1 @@
+{"processes":{"9e7cd860-51bd-44c5-8676-5b95aef64eea":{"parent":null,"children":["c27b73bf-a394-4c20-a2ed-2443c07ef64d"]},"c27b73bf-a394-4c20-a2ed-2443c07ef64d":{"parent":"9e7cd860-51bd-44c5-8676-5b95aef64eea","children":[]}},"files":{"C:\\Users\\Administrator\\Desktop\\js\\TDD\\palindrome\\src\\palindrome.js":["c27b73bf-a394-4c20-a2ed-2443c07ef64d"]},"externalIds":{}}
